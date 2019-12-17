@@ -1,0 +1,45 @@
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>Play Stress</title>
+
+<link href="styles.css" rel="stylesheet" />
+
+<script src="https://unpkg.com/vue"></script>
+
+</head>
+
+<body class="body">
+
+    <div id="vue-app">
+
+        <div id="background"></div>
+
+        <!-- IMAGENS -->
+        <div>
+        <img src="img/bag.png" id="bag" v-if="!fim">
+        <img src="img/bag-burst.png" id="bag-burst" v-if="fim">
+        </div>
+
+        <!-- BARRA DE HP -->
+        <div class="hp">
+            <div v-bind:style="{ width: hp + '%' }" v-bind:class="{'barra100':barraHealth(), 'barra40':!barraHealth()}"></div>
+        </div>
+        <p v-bind:class="{'infoHP100':health(), 'infoHP40':!health()}">HP: {{hp}}</p>
+
+    <!-- BOTÕES -->
+    <div id="controle">
+    <img src="img/box.ico" class="cursor" v-on:click="socar()" v-show="!fim">
+    <img src="img/reset.ico" class="cursor" v-on:click="resetar()">
+    </div>
+
+    </div>
+
+    <script src="app.js"></script>
+        
+</body>
+        
+</html>

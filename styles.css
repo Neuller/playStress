@@ -1,0 +1,50 @@
+.body{
+    text-align: center;
+    margin: auto;
+}
+
+.hp{
+    width: 200px;
+    border: 2px solid #000;
+    margin: 0 auto 20px auto;
+}
+
+.barra100{
+    height: 20px;
+    background: green;
+}
+
+.barra40{
+    height: 20px;
+    background: crimson;
+}
+
+.controle{
+    width: 120px;
+    margin: 0 auto;
+}
+
+.cursor{
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+    padding: 1em;
+    border: 2px solid #000;
+}
+
+.infoHP100{
+    color: green;
+}
+
+.infoHP40{
+    color: crimson;
+    font-weight: bold;
+}
+
+.background{
+    background-image: url("./img/ringue.jpg");
+}
+
+
+
+    
